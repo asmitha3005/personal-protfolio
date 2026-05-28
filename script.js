@@ -1,15 +1,15 @@
 // Typing effect
-const text = "Full Stack Developer | AI-ML Enthusiast | Web Developer";
+const text = "Full Stack Developer | AI-ML Enthusiast | Python Programmer";
 let i = 0;
 
-function type(){
+function typing(){
   if(i < text.length){
     document.getElementById("typing").innerHTML += text.charAt(i);
     i++;
-    setTimeout(type, 50);
+    setTimeout(typing, 50);
   }
 }
-type();
+typing();
 
 // Smooth scroll
 document.querySelectorAll("a[href^='#']").forEach(a=>{
