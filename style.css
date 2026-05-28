@@ -10,12 +10,12 @@ body{
   color:white;
 }
 
-/* NAV */
+/* HEADER */
 header{
   display:flex;
   justify-content:space-between;
   align-items:center;
-  padding:20px 10%;
+  padding:20px 8%;
   position:sticky;
   top:0;
   background:#0f172a;
@@ -42,7 +42,7 @@ nav a:hover{
 }
 
 .hero h2{
-  font-size:50px;
+  font-size:55px;
 }
 
 .hero span{
@@ -55,42 +55,33 @@ nav a:hover{
   padding:12px 25px;
   background:#38bdf8;
   color:black;
-  border-radius:8px;
+  border-radius:10px;
   text-decoration:none;
 }
 
 /* SECTIONS */
 .section{
-  padding:80px 10%;
+  padding:80px 8%;
   text-align:center;
 }
 
-/* SKILLS */
-.skill{
-  margin:15px 0;
-  text-align:left;
+.dark{
+  background:#111c36;
 }
 
-.bar{
-  width:100%;
-  background:#1e293b;
-  height:10px;
-  border-radius:10px;
-}
-
-.bar div{
-  height:10px;
-  background:#38bdf8;
-  border-radius:10px;
+/* GRID */
+.grid{
+  display:grid;
+  grid-template-columns:repeat(auto-fit,minmax(180px,1fr));
+  gap:15px;
+  margin-top:20px;
 }
 
 /* CARDS */
 .card{
   background:#1e293b;
-  margin:20px auto;
   padding:20px;
   border-radius:12px;
-  max-width:600px;
   transition:0.3s;
 }
 
@@ -99,7 +90,7 @@ nav a:hover{
 }
 
 /* CONTACT */
-.contact-box a{
+.contact a{
   display:inline-block;
   margin:10px;
   padding:10px 20px;
